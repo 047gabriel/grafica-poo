@@ -9,7 +9,5 @@ const resultado = cartaz.adicionarUnidades(-1)
 console.log(resultado)
 
 if(!resultado) {
-    
+    console.log(cartaz.getQuantidade)
 }
-
-console.log(cartaz.getQuantidade)
