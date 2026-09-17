@@ -11,4 +11,8 @@ export class EncomendaCartaz extends Encomenda {
     get tamanhoCartaz() {
         return this.#tamanhoCartaz
     }
+
+    produzir() {
+        console.log(`Descrição: ${this.descricao} | Quantidade: ${this.quantidade} | Tamanho: ${this.#tamanhoCartaz}`)
+    }
 }
