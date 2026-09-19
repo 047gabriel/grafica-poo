@@ -8,11 +8,15 @@ export class EncomendaCartaz extends Encomenda {
         this.#tamanhoCartaz = tamanhoCartaz
     }
 
-    get tamanhoCartaz() {
+    get getTamanhoCartaz() {
         return this.#tamanhoCartaz
     }
 
     produzir() {
-        console.log(`Descrição: ${this.descricao} | Quantidade: ${this.quantidade} | Tamanho: ${this.#tamanhoCartaz}`)
+        console.log(`
+            Descrição: ${this.descricao}
+            Quantidade: ${this.getQuantidade}
+            Tamanho: ${this.getTamanhoCartaz}
+            `)
     }
 }

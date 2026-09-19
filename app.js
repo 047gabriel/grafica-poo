@@ -1,14 +1,11 @@
+// import { Encomenda } from "./model/Encomenda.js";
 import { EncomendaCartaz } from "./model/EncomendaCartaz.js";
 import { EncomendaConvite } from "./model/EncomendaConvite.js";
+import { EncomendaEtiqueta} from "./model/EncomendaEtiqueta.js";
 
-const cartaz = new EncomendaCartaz('Petrsokigrgvesrvg', 0 , '100x300');
+const cartazSabao = new EncomendaCartaz('Vende-se sabão caseiro', 100, '50x50');
+const conviteCasamento = new EncomendaConvite('Casamento', 300, '10x20');
+const etiquetaProduto = new EncomendaEtiqueta('Moletom', 50, 'P ao GG');
 
-// console.log(cartaz.descricao ,cartaz.getQuantidade, cartaz.tamanhoCartaz)
-
-const resultado = cartaz.adicionarUnidades(-1)
-
-// console.log(resultado)
-
-const convite = new EncomendaConvite('Festa', 10, 'Aniversário')
-
-console.log(convite.descricao, convite.getQuantidade, convite.nomeEvento)
+console.log(cartazSabao)
+cartazSabao.produzir()

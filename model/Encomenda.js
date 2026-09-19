@@ -19,7 +19,7 @@ export class Encomenda {
         if(unidades > 0) {
             this.#quantidade += unidades
             return true
-            
+
         } else {
             return false
         }

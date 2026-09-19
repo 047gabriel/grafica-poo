@@ -5,14 +5,18 @@ export class EncomendaConvite extends Encomenda {
 
     constructor(descricao, quantidade, nomeEvento) {
         super(descricao, quantidade) 
-            this.#nomeEvento = nomeEvento
+        this.#nomeEvento = nomeEvento
     }
-
-    get nomeEvento() {
+    
+    get getNomeEvento() {
         return this.#nomeEvento
     }
 
-produzir() {
-        console.log(`Descrição: ${this.descricao} | Quantidade: ${this.getQuantidade} | Tamanho: ${this.#nomeEvento}`)
+    produzir() {
+        console.log(`
+            Descrição: ${this.descricao}
+            Quantidade: ${this.getQuantidade}
+            Tamanho: ${this.getNomeEvento}
+            `)
     }
 }
