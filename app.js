@@ -13,6 +13,10 @@ import { EncomendaConvite } from "./model/EncomendaConvite.js";
 import { EncomendaEtiqueta} from "./model/EncomendaEtiqueta.js";
 
 // 1 -
+console.log(`
+    QUESTÃO 1/5
+    `)
+
 const cartazSabao = new EncomendaCartaz('Vende-se sabão caseiro', 100, '50x50');
 const conviteCasamento = new EncomendaConvite('Casamento', 300, '10x20');
 const etiquetaProduto = new EncomendaEtiqueta('Promoção Inverno', 50, 'Moletom');
@@ -26,6 +30,10 @@ etiquetaProduto.produzir()
 console.log('===================================')
 
 // 2 -
+console.log(`
+    QUESTÃO 2/5
+    `)
+
 cartazSabao.adicionarUnidades(55)
 console.log(cartazSabao.getQuantidade)
 console.log(cartazSabao.adicionarUnidades(10))
@@ -34,16 +42,32 @@ console.log(cartazSabao.adicionarUnidades(-1))
 console.log('===================================')
 
 // 3 -
+console.log(`
+    QUESTÃO 3/5
+    `)
 
 conviteCasamento.adicionarUnidades(0)
 console.log(conviteCasamento.getQuantidade)
 
+console.log('===================================')
+
+// 4 -
+console.log(`
+    QUESTÃO 4/5
+    `)
+
 let encomendas = [cartazSabao, conviteCasamento, etiquetaProduto];
+
+console.log('===================================')
+
+console.log(`
+    QUESTÃO 5/5
+    `)
 
 // for(let i = 0; i < encomendas.length; i++) {
 //     encomendas[i].produzir()
 // }
 
-// for(const encomenda of encomendas) {
-//     encomenda.produzir()
-// }
+for(const encomenda of encomendas) {
+    encomenda.produzir()
+}
